@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Wrex </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/combined.css">
+</head>
+
+<body>
+  <div class="container content-container">
+    <!--header-->
+    <div class="row">
+      <div class="col">
+        <div class="user-header__wrap">
+          <div class="user-header">
+            <div class="user-header__avatar">
+              <img src="images/user-avatar.png">
+            </div>
+            <div class="user-header__container">
+              <div class="user__info">
+                <div class="user__info-item">
+                  <span class="user__info-value">44</span>
+                  <span class="user__info-name">post</span>
+                </div>
+                <div class="user__info-item">
+                  <span class="user__info-value">246K</span>
+                  <span class="user__info-name">followers</span>
+                </div>
+                <div class="user__info-item">
+                  <span class="user__info-value">456</span>
+                  <span class="user__info-name">following</span>
+                </div>
+              </div>
+              <span class="user__name">sheismichaela giveaway!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end header-->
+
+    <div class="swipe">
+      <div class="swipe__status">
+        <i class="fa fa-times swipe__status-icon"></i>
+        <i class="fa fa-heart swipe__status-icon"></i>
+      </div>
+
+      <div class="swipe__cards">
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt1.png">
+          <h3 class="swipe__card-title">Title 1</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt2.png">
+          <h3 class="swipe__card-title">Title 2</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt3.png">
+          <h3 class="swipe__card-title">Title 3</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt4.png">
+          <h3 class="swipe__card-title">Title 4</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+      </div>
+
+      <div class="swipe__buttons">
+        <button id="nope">
+          <i class="fa fa-times swipe__buttons-icon"></i>
+          DISLIKE
+        </button>
+        <button id="love">
+          <i class="fa fa-heart swipe__buttons-icon"></i>
+          LIKE
+        </button>
+      </div>
+    </div>
+
+
+
+    <!--footer-->
+    <div class="footer">
+      <button class="btn btn-primary">
+        <i class="fab fa-instagram btn-icon"></i>
+        Connect with instagram
+      </button>
+    </div>
+    <!--end footer-->
+
+  </div>
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <script src="js/combined.js"></script>
+</body>
+
+</html>

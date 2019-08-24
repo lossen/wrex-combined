@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Wrex </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/combined.css">
+</head>
+
+<body class="show-modal-onload">
+  <!--modal-->
+  <div class="modal fade modal-primary show" id="modalInstructions" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3 class="modal-title mb-3" id="ModalLabel">Sheismicaela is having a giveaway!</h3>
+          <p class="content-text">Pick a favorite StopWrex design <br> by swiping left or right.</p>
+        </div>
+        <div class="modal-footer d-flex flex-column">
+          <button type="button" class="btn btn-primary mb-4" data-dismiss="modal">Ready!</button>
+          <a href="#" class="link-primary">Rules</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end modal-->
+  <div class="container content-container">
+    <!--header-->
+    <div class="row">
+      <div class="col">
+        <div class="user-header__wrap">
+          <div class="user-header">
+            <div class="user-header__avatar">
+              <img src="images/user-avatar.png">
+            </div>
+            <div class="user-header__container">
+              <div class="user__info">
+                <div class="user__info-item">
+                  <span class="user__info-value">44</span>
+                  <span class="user__info-name">post</span>
+                </div>
+                <div class="user__info-item">
+                  <span class="user__info-value">246K</span>
+                  <span class="user__info-name">followers</span>
+                </div>
+                <div class="user__info-item">
+                  <span class="user__info-value">456</span>
+                  <span class="user__info-name">following</span>
+                </div>
+              </div>
+              <span class="user__name">sheismichaela giveaway!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end header-->
+
+    <!--swipe-->
+    <div class="swipe">
+      <div class="swipe__status">
+        <i class="fa fa-times swipe__status-icon"></i>
+        <i class="fa fa-heart swipe__status-icon"></i>
+      </div>
+
+      <div class="swipe__cards swipe__cards_v2">
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt1.png">
+          <h3 class="swipe__card-title">Title 1</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt2.png">
+          <h3 class="swipe__card-title">Title 2</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt3.png">
+          <h3 class="swipe__card-title">Title 3</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+        <div class="swipe__card">
+          <img class="swipe__card-image" src="./images/shirt4.png">
+          <h3 class="swipe__card-title">Title 4</h3>
+          <p class="swipe__card-description">Description</p>
+        </div>
+      </div>
+
+      <div class="swipe__buttons">
+        <button id="nope">
+          <i class="fa fa-times swipe__buttons-icon"></i>
+          DISLIKE
+        </button>
+        <button id="love">
+          <i class="fa fa-heart swipe__buttons-icon"></i>
+          LIKE
+        </button>
+      </div>
+    </div>
+    <!--end swipe-->
+  </div>
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+  <script src="js/combined.js"></script>
+</body>
+
+</html>
